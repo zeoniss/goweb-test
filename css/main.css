@@ -1,0 +1,165 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+
+  --accent-color: #28a745;
+  --rgba-color: rgba(255, 255, 255, 0.6);
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: rgba(47, 48, 58, 1);
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: #e5e5e5;
+  font-family: "Open Sans";
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-text-color);
+}
+
+.page-header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1360px;
+  height: 768px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/header.jpg);
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list .title {
+  text-decoration: none;
+}
+.container {
+  width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Header */
+.page-header {
+  background-color: var(--primary-white-color);
+}
+.finance-label {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.37;
+  margin-left: 72px;
+  margin-top: 32px;
+}
+.finance-label::before {
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.finance-label::before {
+  background-image: url("../images/book.svg");
+}
+.leader-label {
+  color: var(--primary-white-color);
+}
+.site-nav {
+  display: flex;
+  margin-left: 553px;
+  margin-top: 48px;
+  margin-right: 28px;
+}
+.site-nav .item-nav + .item-nav {
+  margin-left: 40px;
+}
+.site-nav .link {
+  display: block;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  color: var(--primary-white-color);
+  font-weight: 500;
+  line-height: 1.14;
+}
+.site-nav .link:hover {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Main nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 1.36;
+  text-align: center;
+  margin: 0;
+  padding-top: 200px;
+}
+.hero {
+  text-align: center;
+}
+.next-title {
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.35;
+  margin-top: 16px;
+}
+/* Button */
+.button {
+  min-width: 175px;
+  height: 50px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  font-family: inherit;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.button.primary {
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  padding: 10px 32px;
+  text-align: center;
+  align-items: center;
+}
+.section {
+  margin: 0;
+  padding: 0;
+}
+.work-list {
+  margin: 0;
+  padding: 0;
+}
